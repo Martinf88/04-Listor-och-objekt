@@ -8,6 +8,7 @@ export const fruitList = [
 	"Citron",
 	"Mandarin",
 	"Mango",
+	"ananas",
 ]
 
 export const citys = [

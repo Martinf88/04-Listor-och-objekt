@@ -2,7 +2,7 @@ import { fruitList } from '../data/data.js'
 
 const Fruits = () => {
 
-	const sortedList = fruitList.sort()
+	const sortedList = fruitList.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
 	return (
 		<>
 		<h2>Övning 4.1</h2>
