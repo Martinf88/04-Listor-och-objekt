@@ -3,8 +3,11 @@ export const fruitList = [
 	"Päron",
 	"Apelsin",
 	"Banan",
+	"Melon",
+	"Kiwi",
+	"Citron",
 	"Mandarin",
-	"Mango"
+	"Mango",
 ]
 
 export const citys = [
