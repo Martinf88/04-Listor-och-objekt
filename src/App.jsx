@@ -2,8 +2,9 @@
 import './App.css'
 // import EditUser from './Components/EditName'
 // import RandomNumber from './RandomNumber'
-import Fruits from './Components/FruitList.jsx'
+// import Fruits from './Components/FruitList.jsx'
 import { RenderCitys } from './Components/Citys'
+import Athletes from './Components/sportsPeople'
 
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
     <>
 		{/* <RenderCitys/> */}
 		{/* <EditUser/> */}
-		<Fruits />
-		<hr />
+		{/* <Fruits /> */}
 		{/* <RandomNumber/> */}
+		<Athletes/>
     </>
   )
 }
