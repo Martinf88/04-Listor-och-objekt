@@ -20,7 +20,7 @@ export function RenderCitys(props) {
 
 	return (
 		<div>
-			<h2>Övning 4.1</h2>
+			<h2>Övning 4.4</h2>
 			<ul>
 				
 					{citysList.map((city) => (
