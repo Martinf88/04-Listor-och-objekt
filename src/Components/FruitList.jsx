@@ -2,11 +2,12 @@ import { fruitList } from '../data/data.js'
 
 const Fruits = () => {
 
+	const sortedList = fruitList.sort()
 	return (
 		<>
 		<h2>Övning 4.1</h2>
 		<ul>
-			{fruitList.map(fruit =>(
+			{sortedList.map(fruit =>(
 				<li key={fruit}>{fruit}</li>
 			))}	
 		</ul>
