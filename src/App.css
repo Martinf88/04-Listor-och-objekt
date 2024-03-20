@@ -7,31 +7,43 @@
 
 body {
 	box-sizing: border-box;
+	background-color: hsl(0, 0%, 98%);
 }
 
 h1, h2 {
 	text-align: center;
+	color: hsla(240, 19%, 10%, 0.953);
 }
 
-.athletes-display {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 1em;
+/* CSS for the athletes table */
+.athletes-table {
+    width: 100%;
+    border-collapse: collapse;
 }
-.athletes-display div{
-	border: 10px solid rgb(255, 0, 0);
-	padding: 1em;
-	background-color: beige;
-	color: green;
-	font-weight: bold;
-	max-width: 150px;
-	border-radius: 5px;
-	box-shadow: 5px 5px 5px 5px black;
+
+/* CSS for the table caption */
+.athletes-table caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-.athletes-display div:hover{
-	border: 10px solid rgb(255, 200, 0);
-	background-color: rgb(238, 30, 231);
-	color: rgb(59, 175, 187);
-	box-shadow: 5px 5px 5px 5px hsl(0, 76%, 41%);
-	font-size: 1.5em;
+
+/* CSS for table header cells */
+.athletes-table th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* CSS for table body cells */
+.athletes-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Alternating row background colors */
+.athletes-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }

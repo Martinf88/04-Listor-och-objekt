@@ -5,17 +5,28 @@ function Athletes() {
 
 	return (
 		<>
-		<h1>Samlarkort</h1>
-		<section className='athletes-display'>
-			{athletes.map((athlete) => (
-				<div key={athlete.id}>
-					<p>{athlete.name}</p>
-					<p>{athlete.age}</p>
-					<p>{athlete.sport}</p>
-					<p>{athlete.hometown}</p>
-				</div>
-			))}
-		</section>
+		<table className='athletes-table'>
+			<caption>Övning 4.5</caption>
+			<thead>
+				<tr>
+					<th scope="col">Namn</th>
+					<th scope="col">Ålder</th>
+					<th scope="col">Sport</th>
+					<th scope="col">Hometown</th>
+				</tr>
+			</thead>
+			<tbody>
+				{athletes.map((athlete) => (
+					<tr key={athlete.id}>
+						<th scope="row">{athlete.name}</th>
+						<td>{athlete.age}</td>
+						<td>{athlete.sport}</td>
+						<td>{athlete.hometown}</td>
+					</tr>
+				))}
+			</tbody>
+		</table>
+		
 		</>
 	  );
 }
