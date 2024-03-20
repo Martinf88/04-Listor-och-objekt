@@ -4,15 +4,12 @@ import { movies } from "../data/data"
 function Movies() {
 	
 	const [searchTerm, setSearchTerm] = useState("")
-	// TODO: usestate för att uppdatera listan när man söker
-	// onchange på inputfält
-	//funktion för onchangeevent
 
 	const filteredMovies = movies.filter(movie => {
 		return movie.titel.toLowerCase().includes(searchTerm.toLowerCase())
 		
 	})
-	console.log(filteredMovies);
+
 	return (
 		<>
 			<header>
@@ -24,10 +21,10 @@ function Movies() {
 					{filteredMovies.map((movie) => (
 						<div key={movie.titel}>
 							<h3 className="movie-title">{movie.titel}</h3>
-							<p>Regissör: <br/>{movie.regissor}</p>
-							<p>Premiär: <br/>{movie.år}</p>
-							<p>Genre: <br/>{movie.genre}</p>
-							<p>Betyg: <br/>{movie.betyg}</p>
+							<p className="info"><strong>Regissör:</strong> <br/>{movie.regissor}</p>
+							<p className="info"><strong>Premiär:</strong> <br/>{movie.år}</p>
+							<p className="info"><strong>Genre:</strong><br/>{movie.genre}</p>
+							<p className="info"><strong>Betyg: </strong><br/>{movie.betyg}</p>
 						</div>
 					))}
 				</div>

@@ -65,11 +65,10 @@ main {
 }
 
 .movies-container div {
-	border: 1px solid black;
-	width: 200px;
-	display: flex;
-	flex-direction: column;
+	border: 2px solid hsl(0, 0%, 10%);
+	min-width: 200px;
 	border-radius: 5px;
+	background-color: hsl(0, 0%, 98%);
 }
 
 .movie-title {
@@ -77,10 +76,17 @@ main {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	background-color: black;
-	color: white;
+	background-color: hsl(0, 0%, 10%);
+	color: hsla(51, 100%, 50%, 0.95);
 	margin: 0;
 	height: 5em
+}
+
+.info {
+	padding: 0.4em;
+	margin: 0;
+	color: hsl(0, 0%, 30%);
+	line-height: 20px;
 }
 
 
