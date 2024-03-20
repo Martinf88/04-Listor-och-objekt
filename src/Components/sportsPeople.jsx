@@ -1,4 +1,5 @@
 import { athletes } from '../data/data.js'
+import AthleteRow from './AthleteRow';
 
 function Athletes() {
 	
@@ -12,18 +13,13 @@ function Athletes() {
 					<th scope="col">Namn</th>
 					<th scope="col">Ålder</th>
 					<th scope="col">Sport</th>
-					<th scope="col">Hometown</th>
+					<th scope="col">Hemstad</th>
 				</tr>
 			</thead>
 			<tbody>
-				{athletes.map((athlete) => (
-					<tr key={athlete.id}>
-						<th scope="row">{athlete.name}</th>
-						<td>{athlete.age}</td>
-						<td>{athlete.sport}</td>
-						<td>{athlete.hometown}</td>
-					</tr>
-				))}
+			{athletes.map((athlete) => (
+				<AthleteRow key={athlete.id} athlete={athlete}/>
+			))}
 			</tbody>
 		</table>
 		
